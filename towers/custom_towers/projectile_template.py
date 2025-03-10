@@ -1,6 +1,6 @@
 import arcade
 import math
-from projectile import ProjectileTower, Projectile
+from ..projectile import ProjectileTower, Projectile
 
 class ProjectileTemplate(Projectile):
     def __init__(self, dx, dy, effect_multiplier, bounding_box):

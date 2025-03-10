@@ -1,6 +1,6 @@
 import arcade
 import math
-from absolute import AbsoluteTower
+from ..absolute import AbsoluteTower
 
 class AbsoluteTowerTemplate(AbsoluteTower):
     def __init__(self, stage, scale):
