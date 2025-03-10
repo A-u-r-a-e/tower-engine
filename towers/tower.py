@@ -7,8 +7,6 @@ class TCat(Enum):
     Radial = auto()
     Absolute = auto()
 
-
-
 class Tower(arcade.BasicSprite):
     def __init__(self, image_list, cost_list, stage, scale, cat: TCat):
 
