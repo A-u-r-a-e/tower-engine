@@ -1,11 +1,11 @@
 import arcade
 import math
-from ..radial import RadialTower
+from ...radial import RadialTower
 
 class RadialTowerTemplate(RadialTower):
     def __init__(self, stage, scale):
         # the template for towers that affect things in a radius around itself indiscriminately
-        super().__init__([""], # a list of image file locations for each upgrade of your tower, 0th is the shop sprite
+        super().__init__([""],  # a list of image file names for each upgrade of your tower, 0th is the shop sprite
                          [], # a list of costs for each upgrade of your tower, 0th is the initial purchase cost
                          stage, 
                          scale,

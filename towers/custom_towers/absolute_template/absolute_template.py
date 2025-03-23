@@ -1,11 +1,11 @@
 import arcade
 import math
-from ..absolute import AbsoluteTower
+from ...absolute import AbsoluteTower
 
 class AbsoluteTowerTemplate(AbsoluteTower):
     def __init__(self, stage, scale, effect_multiplier):
         # the tower that interacts with any position on a map indiscriminate of where it is located
-        super().__init__([""], # a list of image file locations for each upgrade of your tower, 0th is the shop sprite
+        super().__init__([""], # a list of image file names for each upgrade of your tower, 0th is the shop sprite
                          [], # a list of costs for each upgrade of your tower, 0th is the initial purchase cost
                          stage,
                          scale, 

@@ -1,11 +1,11 @@
 import arcade
 import math
-from ..projectile import ProjectileTower, Projectile
+from ...projectile import ProjectileTower, Projectile
 
 class ProjectileTemplate(Projectile): #change ProjectileTemplate to your TOWERNAMEProjectile, and change it in the Tower class definition accordingly
     def __init__(self, dx, dy, effect_multiplier, bounding_box):
         # image, scale, base_effect, effect_multiplier, dx, dy, bounding_box
-        super().__init__("", #the image location of your projectile with respect to this project folder
+        super().__init__("", #the image file name of your projectile
                          1.0, #the scale that you want to multiply your projectile image by when it is rendered
                          10, # the amount of damage/effect that your projectile does upon impact
                          effect_multiplier, 
@@ -20,8 +20,8 @@ class ProjectileTemplate(Projectile): #change ProjectileTemplate to your TOWERNA
 
 class ProjectileTowerTemplate(ProjectileTower):
     def __init__(self, stage, scale, effect_multiplier):
-        # image_list, cost_list, stage, scale, projectile, effect_multiplier, range: int, velocity, cooldown: int
-        super().__init__([""], # a list of image file locations for each upgrade of your tower, 0th is the shop sprite
+        # the template for the tower that shoots out projectiles within a certain range
+        super().__init__([""],  # a list of image file names for each upgrade of your tower, 0th is the shop sprite
                          [], # a list of costs for each upgrade of your tower, 0th is the initial purchase cost
                          stage, 
                          scale, 

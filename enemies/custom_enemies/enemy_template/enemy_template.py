@@ -1,11 +1,11 @@
 import arcade
 import math
-from ..enemy import Enemy
+from ...enemy import Enemy
 
 class EnemyName(Enemy):
     
     def __init__(self, target_entity):
-        super().__init__("file/path/to/image", #in the string write the file path to your image relative to this project
+        super().__init__("", # the enemy image file name
                          1.0,  # the scale that is needed to be applied to this image to be of tile size
                          target_entity,
                          10, #how much damage you will deal to the play if you reach the end
