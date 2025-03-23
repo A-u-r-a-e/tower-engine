@@ -5,8 +5,14 @@ from ..enemy import Enemy
 class EnemyName(Enemy):
     
     def __init__(self, target_entity):
-        #image, scale, target, damage, damage_radius, speed, health
-        super().__init__("file/path/to/image", 1.0, target_entity, 10, 5, 2, 50)
+        super().__init__("file/path/to/image", #in the string write the file path to your image relative to this project
+                         1.0,  # the scale that is needed to be applied to this image to be of tile size
+                         target_entity,
+                         10, #how much damage you will deal to the play if you reach the end
+                         5, #from the center of your entity, how many pixels away will your enemy be considered to have reached the end
+                         2, #how many times the standard speed your thing is
+                         50 # hitpoints
+                         )
 
     def update(self, entity_list):
         super().update(entity_list)
