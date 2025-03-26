@@ -1,0 +1,17 @@
+import arcade
+from ..enemies import enemy
+
+def chain_lightning(x, y, damage, enemy_list, damage_set, max_jump_dist, jump_falloff=1, max_split=-1, hit_delay=-1, return_hit=False):
+    collision_circle = arcade.SpriteCircle(max_jump_dist, arcade.color.AIR_FORCE_BLUE, False, x=x, y=y)
+    collision_list = arcade.check_for_collision_with_lists(collision_circle, enemy_list)
+    splits_left = len(collision_list) if max_split == -1 else max_split
+    for i in len(enemy_list):
+        if i not in damage_set:
+            if splits_left > 1:
+                splits_left-=1
+                #ADHD SCREW YOUUUU I DONT KNOW HOW TO DO THIS AHAHAHAHAHA
+
+
+    
+    return damage_set, splits_left
+
