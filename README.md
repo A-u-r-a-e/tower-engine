@@ -14,3 +14,11 @@ tower defense recode because my first draft is crap
 - Ricky - Immunity to certain towers
 - Vincent - Destroys towers periodically
 - Leo - Summoner (clash royale witch)
+
+
+### TODOs
+- rendering functions for: tower, enemies, gui
+- tower ai for: absolute, projectile, aura
+- enemy ai for: movement, end of life
+- shop interactability
+- game update
