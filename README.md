@@ -21,4 +21,4 @@ tower defense recode because my first draft is crap
 - tower ai for: absolute, projectile, aura
 - enemy ai for: movement, end of life
 - shop interactability
-- game update
+- game mainloop
